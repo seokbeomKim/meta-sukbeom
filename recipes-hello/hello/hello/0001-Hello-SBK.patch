@@ -1,0 +1,22 @@
+From 6c7a2424283e1789043140bfdd8f35139e38df9f Mon Sep 17 00:00:00 2001
+From: Jason Kim <sukbeom.kim@gmail.com>
+Date: Sat, 3 Feb 2024 11:58:16 +0900
+Subject: [PATCH] Hello, SBK!
+
+---
+ src/hello.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/src/hello.c b/src/hello.c
+index f9b512d..453b859 100644
+--- a/src/hello.c
++++ b/src/hello.c
+@@ -106,7 +106,7 @@ main (int argc, char *argv[])
+ 
+   /* Print greeting message and exit. */
+   if (g == greet_traditional)
+-    printf (_("hello, world\n"));
++    printf (_("hello, SBK!\n"));
+ 
+   else if (g == greet_new)
+     /* TRANSLATORS: Use box drawing characters or other fancy stuff

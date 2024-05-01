@@ -1,0 +1,22 @@
+From ab362bac7119b7b7b2898d018fafcf8c9f1f548a Mon Sep 17 00:00:00 2001
+From: Jason Kim <sukbeom.kim@gmail.com>
+Date: Thu, 1 Feb 2024 00:00:01 +0900
+Subject: [PATCH] Change kernel boot message
+
+---
+ arch/arm64/kernel/setup.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/arch/arm64/kernel/setup.c b/arch/arm64/kernel/setup.c
+index 42c690bb2d60..a5022631578b 100644
+--- a/arch/arm64/kernel/setup.c
++++ b/arch/arm64/kernel/setup.c
+@@ -91,7 +91,7 @@ void __init smp_setup_processor_id(void)
+ 	u64 mpidr = read_cpuid_mpidr() & MPIDR_HWID_BITMASK;
+ 	set_cpu_logical_map(0, mpidr);
+ 
+-	pr_info("Booting Linux on physical CPU 0x%010lx [0x%08x]\n",
++	pr_info("Booting SBK Linux on physical CPU 0x%010lx [0x%08x]\n",
+ 		(unsigned long)mpidr, read_cpuid_id());
+ }
+ 

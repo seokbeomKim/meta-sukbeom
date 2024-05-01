@@ -1,0 +1,22 @@
+From a4a9dd316cd6fdf8288db065e1e8f7572a93c855 Mon Sep 17 00:00:00 2001
+From: Jason Kim <sukbeom.kim@gmail.com>
+Date: Sat, 3 Feb 2024 11:51:45 +0900
+Subject: [PATCH] Change greeting string.
+
+---
+ src/hello.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/src/hello.c b/src/hello.c
+index 47af4da..f9b512d 100644
+--- a/src/hello.c
++++ b/src/hello.c
+@@ -125,7 +125,7 @@ main (int argc, char *argv[])
+     puts (greeting_msg);
+ 
+   else if (g == greet_gnu)
+-    puts (_("Hello, world!"));
++    puts (_("Hello, SBK!"));
+   
+   else {
+     /* No need for this impossible message to be translated.  */
