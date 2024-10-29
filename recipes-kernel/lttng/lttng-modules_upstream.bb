@@ -3,14 +3,14 @@ SUMMARY = "Linux Trace Toolkit KERNEL MODULE"
 DESCRIPTION = "The lttng-modules 2.0 package contains the kernel tracer modules"
 HOMEPAGE = "https://lttng.org/"
 LICENSE = "LGPL-2.1-only & GPL-2.0-only & MIT"
-LIC_FILES_CHKSUM = "file://LICENSE;md5=0464cff101a009c403cd2ed65d01d4c4"
+LIC_FILES_CHKSUM = "file://LICENSE;md5=018e002dbdda3306682e394ddd65fa32"
 
 inherit module
 
 include lttng-platforms.inc
 
 SRC_URI = "git://seokbeomKim@review.lttng.org:29418/lttng-modules;branch=master;protocol=ssh"
-SRCREV = "056c40d82b02499c6692e5c01e8da59d1e0bdd17"
+SRCREV = "166a05ce64a05218f51563d201644ab3bfddaacc"
 
 S = "${WORKDIR}/git"
 
